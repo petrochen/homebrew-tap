@@ -1,8 +1,8 @@
 class Brioctl < Formula
   desc "Command-line control for the Logitech MX Brio webcam"
   homepage "https://github.com/petrochen/brioctl"
-  url "https://github.com/petrochen/brioctl/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "bdaf844f6029af8e19f991bfe383412ab50b4051b15281bc57c23112fb138b42"
+  url "https://github.com/petrochen/brioctl/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "408b17711295d2ee14dadbc9a40332129e9d4c303b47fd2304e2e94113d4de28"
   license "MIT"
 
   depends_on :macos
