@@ -1,8 +1,8 @@
 class Brioctl < Formula
   desc "Command-line control for the Logitech MX Brio webcam"
   homepage "https://github.com/petrochen/brioctl"
-  url "https://github.com/petrochen/brioctl/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "408b17711295d2ee14dadbc9a40332129e9d4c303b47fd2304e2e94113d4de28"
+  url "https://github.com/petrochen/brioctl/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "c9703bfda8e9de91cd5328441f0239b1e5dc0ad09797d2ea6ae4b23f3727bf9c"
   license "MIT"
 
   depends_on :macos
@@ -10,6 +10,7 @@ class Brioctl < Formula
   def install
     system "make", "VERSION=#{version}"
     bin.install "brioctl"
+    (share/"brioctl/skills/brioctl").install "skills/brioctl/SKILL.md"
   end
 
   # brew services start brioctl
@@ -28,6 +29,8 @@ class Brioctl < Formula
         1. Set the camera the way you want it:   brioctl fov 78 warmth 60 ...
         2. Save the settings:                    brioctl save
         3. Start the agent:                      brew services start brioctl
+
+      For Claude Code or Codex: brioctl install-skill
 
       The settings file is ~/.config/brioctl/settings and the log is #{var}/log/brioctl.log.
       If you installed the agent with "make agent" before, remove it first: make unagent
