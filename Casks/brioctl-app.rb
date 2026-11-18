@@ -1,6 +1,6 @@
 cask "brioctl-app" do
-  version "1.2.0"
-  sha256 "f4b578329046aa125f10e4dd1ba3b386559d9cf268ae45dc1cb46beae0887b01"
+  version "1.3.0"
+  sha256 "7e5a94e9e6dfd9aabd101258ff387edef5254d98362a459250da2f51f7be196b"
 
   url "https://github.com/petrochen/brioctl/releases/download/v#{version}/brioctl-app-#{version}.zip"
   name "brioctl"
