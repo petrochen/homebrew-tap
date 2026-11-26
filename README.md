@@ -16,3 +16,11 @@ brew install --cask petrochen/tap/brioctl-app   # menu bar app
 command line or the menu bar (field of view, zoom, warmth, HDR, presets) and re-applies your settings when video
 starts. The formula builds from source. The app is signed ad hoc and not notarized; the cask removes the quarantine
 attribute after installing it.
+
+```bash
+brew install --cask petrochen/tap/nvmeter
+```
+
+[NVMeter](https://github.com/petrochen/nvmeter): monitor for NVMe SSDs and the USB4 / Thunderbolt enclosures they sit
+in (SMART health, temperatures, per-slot PCIe links, history, speed tests for video work). Signed with Developer ID
+and notarized by Apple, so it opens without a Gatekeeper dialog.
