@@ -1,6 +1,6 @@
 cask "nvmeter" do
-  version "0.10.0"
-  sha256 "3bab36c91d2b5386a2b3d2bcbee95f11aa34dcf73ad45f78a1ecba563709ab70"
+  version "0.11.0"
+  sha256 "db71a6c49202994787b4de26edd8158de96602562bca323775f2fab7d0fc9abb"
 
   url "https://github.com/petrochen/nvmeter/releases/download/v#{version}/NVMeter-#{version}.zip"
   name "NVMeter"
