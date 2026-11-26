@@ -4,7 +4,7 @@ cask "nvmeter" do
 
   url "https://github.com/petrochen/nvmeter/releases/download/v#{version}/NVMeter-#{version}.zip"
   name "NVMeter"
-  desc "Monitor for NVMe SSDs and USB4/Thunderbolt enclosures: SMART, temperatures, speed tests"
+  desc "Monitor NVMe SSDs and USB4/Thunderbolt enclosures: SMART, heat, speed tests"
   homepage "https://github.com/petrochen/nvmeter"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "nvmeter" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "NVMeter.app"
 

@@ -18,6 +18,7 @@ starts. The formula builds from source. The app is signed ad hoc and not notariz
 attribute after installing it.
 
 ```bash
+brew trust petrochen/tap      # Homebrew asks once before loading casks from a third-party tap
 brew install --cask petrochen/tap/nvmeter
 ```
 
